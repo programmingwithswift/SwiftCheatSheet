@@ -18,19 +18,19 @@ class ViewController: UIViewController {
     
     private func run() {
         
-        // 1. Get length of string
+        // Get length of string
         let stringForLength = "string for length"
         let lengthOfString = stringForLength.count
 //        print(lengthOfString)
         
-        // 2. Split string into array
+        // Split string into array
         let stringToSplit = "string to split"
         let splitString = stringToSplit.components(separatedBy: " ")
         let splitToCharacters = Array(stringToSplit)
 //        print(splitString)
 //        print(splitToCharacters)
         
-        // 3. Enumerate Enum
+        // Enumerate Enum
         enum EnumerateEnum: CaseIterable {
             case one
             case two
@@ -42,17 +42,27 @@ class ViewController: UIViewController {
 //            print(enumCase)
 //        }
         
-        // 4. Convert Int to String
+        // Convert Int to String
         let intToStringValue = 15
         let stringOfIntValue = String(intToStringValue)
 //        print(stringOfIntValue)
         
-        // 5. Convert String to Int
+        // Convert String to Int
         let stringToIntValue = "10"
         let intOfStringValue = Int(stringToIntValue)
 //        print(intOfStringValue)
         
-        // 6. Sort object array by value
+        // Convert String to Double -> This will create an Optional Double
+        let stringToDoubeValue = "100"
+        let doubleOfStringValue = Double(stringToDoubeValue)
+//        print(doubleOfStringValue)
+        
+        // Double to String
+        let doubleToString = 110.0
+        let stringOfDoubleValue = String(doubleToString)
+        print(stringOfDoubleValue)
+        
+        // Sort object array by value
         let pointArray = [CGPoint(x: 10, y: 10),
                           CGPoint(x: 20, y: 10),
                           CGPoint(x: 30, y: 10),
